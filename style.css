@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --light-grey: rgb(85, 80, 80);
+  --white: rgb(255, 255, 255);
+  --grey: rgb(90 80 80);
+  --golden: rgb(170, 131, 73);
+  --dark-grey: rgb(139, 136, 136);
+  --off-shade: rgb(245, 240, 240);
+}
+
+/* ************************ common classes */
+
+.fitImage {
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.flexboxRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexboxColumn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.golden {
+  color: var(--golden);
+}
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+/* ************************ header style */
+
+#headerBar {
+  box-shadow: 0px 9px 7px -6px rgb(0 0 0 / 14%);
+}
+
+#headerBar .headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#headerBar .logo {
+  width: 7rem;
+  height: 7rem;
+}
+
+.navBar .list {
+  list-style-type: none;
+}
+
+.navBar .item {
+  font-size: 1.8rem;
+  color: var(--dark-grey);
+  font-weight: 500;
+  padding: 1rem;
+  margin-right: 3rem;
+}
+
+/* *********** main hero section style */
+
+#mainHero {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainHero .contentDiv {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contentDiv .heading {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--light-grey);
+  margin-bottom: 3rem;
+}
+
+.contentDiv .paragraph {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--dark-grey);
+  font-family: "Roboto", sans-serif;
+}
+
+#mainHero .heroImg {
+  height: 58rem;
+  flex-basis: 50%;
+  padding-left: 7rem;
+}
+
+/* *********** admission section style */
+
+#gallery {
+  background-image: linear-gradient(90deg, #fff 30%, var(--off-shade) 70%);
+}
+
+#admission {
+  padding: 4rem 0;
+}
+
+#admission .heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--light-grey);
+  line-height: 1.5;
+}
+
+.admissionType {
+  padding: 4rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.admissionType .type {
+  flex-basis: 33%;
+  padding: 0 10rem;
+}
+
+.admissionHeading {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--light-grey);
+  margin: 3rem 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.admissionParagraph {
+  color: var(--dark-grey);
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* *********** admission section style */
+
+.galleryHeading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--light-grey);
+  line-height: 1.5;
+}
+
+.lineDiv {
+  display: flex;
+  align-items: center;
+  padding: 2.7rem 0;
+}
+
+.lineDiv .galleryParagraphLine {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: var(--golden);
+}
+
+.lineDiv .galleryParagraph {
+  color: var(--golden);
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
+
+#gallery .mainGallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mainGallery .imgDiv {
+  flex-basis: 31%;
+  margin-bottom: 3rem;
+}
+
+/* *********** event section style */
+
+#event {
+  padding: 6rem 0;
+}
+
+.eventGallery {
+  width: 100%;
+  padding-top: 5rem;
+  justify-content: space-around;
+}
+
+.eventGallery .imgDiv {
+  flex-basis: 25%;
+  position: relative;
+}
+
+/* *********** form section style */
+
+#formControl {
+  padding: 5rem 0;
+}
+
+#formControl .formContainer {
+  background-color: var(--golden);
+  padding: 6rem 0;
+}
+
+#formControl .formContent {
+  background-color: #fff;
+  padding: 4rem 3rem;
+  margin-left: -6rem;
+  box-shadow: -2px 2px 10px 6px rgb(0 0 0 / 14%);
+}
+
+.formContainer .address h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  /* color: var(--light-grey); */
+  line-height: 1.5;
+}
+
+.formContainer .address h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  margin: 3rem 0;
+  text-transform: capitalize;
+}
+
+.address .iconDiv {
+  display: flex;
+  align-items: center;
+  max-width: 30rem;
+}
+
+.iconDiv p {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  margin: 3rem 0;
+  text-transform: capitalize;
+  color: var(--dark-grey);
+  margin-left: 2rem;
+  padding-right: 5rem;
+}
+
+.address .socialMedia {
+  margin-top: 3rem;
+}
+
+.socialMedia .icon {
+  margin-right: 2rem;
+}
+
+#formControl .mainForm {
+  align-self: stretch;
+  padding: 0 7rem;
+}
+
+.mainForm h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  align-self: end;
+}
+
+.mainForm p {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  align-self: end;
+}
+
+.mainForm form {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.mainForm input,
+.mainForm textarea {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-grey);
+  margin-bottom: 2rem;
+}
+
+.mainForm textarea {
+  height: 19rem;
+  resize: none;
+}
+
+.mainForm button {
+  padding: 1.5rem 6rem;
+  background-color: var(--grey);
+  color: #fff;
+  border-radius: 2.5rem;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
