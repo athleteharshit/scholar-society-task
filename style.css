@@ -347,3 +347,72 @@ font-family: 'Ubuntu', sans-serif; */
   font-size: 2rem;
   font-weight: bold;
 }
+
+/******************************** style footer */
+
+#footerArea {
+  background-color: var(--light-grey);
+  padding: 2rem 0;
+}
+
+.footerContent .content {
+  flex-basis: 33%;
+  align-self: stretch;
+}
+
+#footerArea .content p {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--dark-grey);
+  padding-top: 2rem;
+}
+
+#footerArea .content h1,
+#footerArea .content h2 {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+#footerArea .content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+#footerArea .content input {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.8rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-grey);
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+#footerArea .content button {
+  padding: 1.5rem 6rem;
+  background-color: var(--golden);
+  color: #fff;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+#footerArea .paragraph {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 2rem;
+}
